@@ -1,0 +1,379 @@
+{
+  "visas": [
+    {
+      "id": "uae-tourist",
+      "country": "UAE (Dubai)",
+      "type": "Tourist Visa",
+      "duration": "30 days",
+      "price": 100,
+      "processing_time": "3-5 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Passport-size photographs",
+        "Bank statement",
+        "Travel insurance",
+        "Hotel booking confirmation",
+        "Return flight tickets"
+      ],
+      "documents_needed": [
+        "Passport copy",
+        "Photographs (white background)",
+        "Bank statement (last 3 months)",
+        "Employment letter",
+        "Travel insurance certificate"
+      ],
+      "features": [
+        "Multiple entry options",
+        "Visa extension possible",
+        "Express processing available",
+        "Family visit visa option"
+      ]
+    },
+    {
+      "id": "saudi-business",
+      "country": "Saudi Arabia",
+      "type": "Business Visa",
+      "duration": "90 days",
+      "price": 210,
+      "processing_time": "5-7 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Invitation letter from Saudi company",
+        "Company registration documents",
+        "Bank statement",
+        "Employment letter"
+      ],
+      "documents_needed": [
+        "Passport copy",
+        "Photographs (white background)",
+        "Company letter",
+        "Invitation letter",
+        "Bank statement (last 6 months)",
+        "Business registration"
+      ],
+      "features": [
+        "Multiple entry visa",
+        "Priority processing",
+        "Business meetings support",
+        "Local sponsor assistance"
+      ]
+    },
+    {
+      "id": "qatar-work",
+      "country": "Qatar",
+      "type": "Work Visa",
+      "duration": "2 years",
+      "price": 350,
+      "processing_time": "10-15 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Qatar ID copy",
+        "Employment contract",
+        "Educational certificates",
+        "Police clearance certificate"
+      ],
+      "documents_needed": [
+        "Passport copy",
+        "Photographs (white background)",
+        "Attested educational certificates",
+        "Employment contract",
+        "Medical certificate",
+        "Police clearance"
+      ],
+      "features": [
+        "Family visa option",
+        "Medical insurance included",
+        "Residence permit assistance",
+        "Document attestation service"
+      ]
+    },
+    {
+      "id": "bahrain-tourist",
+      "country": "Bahrain",
+      "type": "Tourist Visa",
+      "duration": "14 days",
+      "price": 85,
+      "processing_time": "2-3 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Passport-size photographs",
+        "Hotel booking",
+        "Return flight tickets"
+      ],
+      "documents_needed": [
+        "Passport copy",
+        "Photographs",
+        "Hotel booking confirmation",
+        "Flight tickets",
+        "Bank statement (optional)"
+      ],
+      "features": [
+        "Express processing",
+        "Visa on arrival option",
+        "Online application",
+        "24/7 support"
+      ]
+    },
+    {
+      "id": "sa-umrah",
+      "country": "Saudi Arabia",
+      "type": "Umrah Visa",
+      "price": 200,
+      "processing_time": "7-10 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "2 recent passport size photographs",
+        "Completed visa application form",
+        "Vaccination certificates",
+        "Bank statement of last 6 months",
+        "Mehram certificate (for females)"
+      ],
+      "features": [
+        "Fast processing",
+        "Document assistance",
+        "Application tracking",
+        "24/7 support"
+      ]
+    },
+    {
+      "id": "sa-visit",
+      "country": "Saudi Arabia",
+      "type": "Visit Visa",
+      "price": 250,
+      "processing_time": "10-15 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "2 recent passport size photographs",
+        "Completed visa application form",
+        "Invitation letter from Saudi sponsor",
+        "Bank statement of last 6 months",
+        "Employment letter"
+      ],
+      "features": [
+        "Document verification",
+        "Application assistance",
+        "Status tracking",
+        "Support services"
+      ]
+    },
+    {
+      "id": "iran-tourist",
+      "country": "Iran",
+      "type": "Tourist Visa",
+      "price": 100,
+      "processing_time": "5-7 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "2 recent passport size photographs",
+        "Completed visa application form",
+        "Hotel booking confirmation",
+        "Return flight tickets",
+        "Travel insurance"
+      ],
+      "features": [
+        "Fast processing",
+        "Hotel booking assistance",
+        "Flight booking support",
+        "Local guide arrangement"
+      ]
+    },
+    {
+      "id": "iraq-ziarat",
+      "country": "Iraq",
+      "type": "Ziarat Visa",
+      "price": 120,
+      "processing_time": "7-10 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "4 recent passport size photographs",
+        "Completed visa application form",
+        "Vaccination certificates",
+        "Travel insurance",
+        "Hotel booking confirmation"
+      ],
+      "features": [
+        "Ziarat package available",
+        "Group discounts",
+        "Transportation arrangement",
+        "Guide services"
+      ]
+    },
+    {
+      "id": "uk-visit",
+      "country": "United Kingdom",
+      "type": "Visit Visa",
+      "price": 150,
+      "processing_time": "15-20 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent passport size photographs",
+        "Completed visa application form",
+        "Bank statements of last 6 months",
+        "Employment letter",
+        "Property documents",
+        "Travel insurance",
+        "Accommodation proof"
+      ],
+      "features": [
+        "Document verification",
+        "Application review",
+        "Interview preparation",
+        "Status tracking"
+      ]
+    },
+    {
+      "id": "schengen",
+      "country": "Schengen States",
+      "type": "Tourist Visa",
+      "price": 130,
+      "processing_time": "15-20 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent passport size photographs",
+        "Completed visa application form",
+        "Flight itinerary",
+        "Hotel bookings",
+        "Travel insurance",
+        "Bank statements",
+        "Employment letter"
+      ],
+      "features": [
+        "Multiple entry options",
+        "Document assistance",
+        "Application tracking",
+        "Travel planning support"
+      ]
+    },
+    {
+      "id": "usa-visit",
+      "country": "United States",
+      "type": "B1/B2 Visa",
+      "price": 160,
+      "processing_time": "30-45 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "DS-160 confirmation",
+        "Recent passport size photographs",
+        "Bank statements of last 12 months",
+        "Tax returns",
+        "Property documents",
+        "Employment letter",
+        "Travel history"
+      ],
+      "features": [
+        "DS-160 filling assistance",
+        "Interview preparation",
+        "Document review",
+        "Application tracking"
+      ]
+    },
+    {
+      "id": "turkey-tourist",
+      "country": "Turkey",
+      "type": "Tourist Visa",
+      "price": 90,
+      "processing_time": "3-5 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent passport size photographs",
+        "Hotel booking",
+        "Return flight tickets",
+        "Bank statement",
+        "Travel insurance"
+      ],
+      "features": [
+        "E-visa assistance",
+        "Fast processing",
+        "Travel planning",
+        "24/7 support"
+      ]
+    },
+    {
+      "id": "malaysia-tourist",
+      "country": "Malaysia",
+      "type": "Tourist Visa",
+      "price": 80,
+      "processing_time": "5-7 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent photographs",
+        "Return flight tickets",
+        "Hotel booking",
+        "Bank statement",
+        "Employment letter"
+      ],
+      "features": [
+        "Fast processing",
+        "Document assistance",
+        "Travel planning",
+        "Local support"
+      ]
+    },
+    {
+      "id": "dubai-tourist",
+      "country": "UAE",
+      "type": "Tourist Visa",
+      "price": 110,
+      "processing_time": "4-5 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent photographs",
+        "Hotel booking",
+        "Return flight tickets",
+        "Bank statement",
+        "Employment letter"
+      ],
+      "features": [
+        "14/30/90 days options",
+        "Fast processing",
+        "Flight booking assistance",
+        "Hotel booking support"
+      ]
+    },
+    {
+      "id": "canada-visit",
+      "country": "Canada",
+      "type": "Tourist Visa",
+      "price": 150,
+      "processing_time": "20-25 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent photographs",
+        "Completed application form",
+        "Bank statements",
+        "Employment letter",
+        "Property documents",
+        "Travel insurance",
+        "Biometrics"
+      ],
+      "features": [
+        "Biometrics assistance",
+        "Document verification",
+        "Application review",
+        "Status tracking"
+      ]
+    },
+    {
+      "id": "australia-visit",
+      "country": "Australia",
+      "type": "Tourist Visa",
+      "price": 140,
+      "processing_time": "15-20 working days",
+      "requirements": [
+        "Valid passport with 6 months validity",
+        "Recent photographs",
+        "Completed application form",
+        "Bank statements",
+        "Employment letter",
+        "Property documents",
+        "Travel insurance"
+      ],
+      "features": [
+        "Online application help",
+        "Document verification",
+        "Status tracking",
+        "Travel planning"
+      ]
+    }
+  ]
+}

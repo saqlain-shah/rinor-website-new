@@ -1,0 +1,135 @@
+{
+  "airfares": [
+    {
+      "id": "dxb-ist-2024",
+      "from": {
+        "city": "Dubai",
+        "airport": "DXB",
+        "country": "UAE"
+      },
+      "to": {
+        "city": "Istanbul",
+        "airport": "IST",
+        "country": "Turkey"
+      },
+      "airline": "Emirates",
+      "flight_number": "EK123",
+      "departure_date": "2024-04-15",
+      "return_date": "2024-04-22",
+      "price": 599,
+      "class": "Economy",
+      "seats_available": 15,
+      "baggage": "30kg",
+      "features": [
+        "In-flight meals",
+        "Entertainment system",
+        "Free Wi-Fi",
+        "Flexible booking"
+      ]
+    },
+    {
+      "id": "dxb-jed-2024",
+      "from": {
+        "city": "Dubai",
+        "airport": "DXB",
+        "country": "UAE"
+      },
+      "to": {
+        "city": "Jeddah",
+        "airport": "JED",
+        "country": "Saudi Arabia"
+      },
+      "airline": "Saudia",
+      "flight_number": "SV456",
+      "departure_date": "2024-04-20",
+      "return_date": "2024-04-27",
+      "price": 399,
+      "class": "Economy",
+      "seats_available": 25,
+      "baggage": "25kg",
+      "features": [
+        "In-flight meals",
+        "Entertainment system",
+        "Prayer area"
+      ]
+    },
+    {
+      "id": "dxb-doh-2024",
+      "from": {
+        "city": "Dubai",
+        "airport": "DXB",
+        "country": "UAE"
+      },
+      "to": {
+        "city": "Doha",
+        "airport": "DOH",
+        "country": "Qatar"
+      },
+      "airline": "Qatar Airways",
+      "flight_number": "QR789",
+      "departure_date": "2024-05-01",
+      "return_date": "2024-05-08",
+      "price": 449,
+      "class": "Economy",
+      "seats_available": 20,
+      "baggage": "30kg",
+      "features": [
+        "In-flight meals",
+        "Entertainment system",
+        "Free Wi-Fi",
+        "Lounge access"
+      ]
+    },
+    {
+      "id": "dxb-bah-2024",
+      "from": {
+        "city": "Dubai",
+        "airport": "DXB",
+        "country": "UAE"
+      },
+      "to": {
+        "city": "Bahrain",
+        "airport": "BAH",
+        "country": "Bahrain"
+      },
+      "airline": "Gulf Air",
+      "flight_number": "GF321",
+      "departure_date": "2024-05-10",
+      "return_date": "2024-05-17",
+      "price": 299,
+      "class": "Economy",
+      "seats_available": 30,
+      "baggage": "23kg",
+      "features": [
+        "In-flight meals",
+        "Entertainment system"
+      ]
+    },
+    {
+      "id": "dxb-mct-2024",
+      "from": {
+        "city": "Dubai",
+        "airport": "DXB",
+        "country": "UAE"
+      },
+      "to": {
+        "city": "Muscat",
+        "airport": "MCT",
+        "country": "Oman"
+      },
+      "airline": "Oman Air",
+      "flight_number": "WY654",
+      "departure_date": "2024-05-15",
+      "return_date": "2024-05-22",
+      "price": 349,
+      "class": "Economy",
+      "seats_available": 18,
+      "baggage": "30kg",
+      "features": [
+        "In-flight meals",
+        "Entertainment system",
+        "Free Wi-Fi"
+      ]
+    }
+  ]
+} 

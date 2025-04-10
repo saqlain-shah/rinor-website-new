@@ -1,0 +1,83 @@
+{
+  "tours": [
+    {
+      "id": "1",
+      "title": "Northern Areas Explorer",
+      "description": "Experience the breathtaking beauty of Pakistan's Northern Areas",
+      "price": 75000,
+      "duration": "7 days",
+      "location": "Hunza Valley",
+      "image": "/images/tours/hunza-valley.jpg",
+      "highlights": [
+        "Visit Baltit Fort",
+        "Attabad Lake boat ride",
+        "Passu Cones viewpoint",
+        "Local cuisine experience"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Hunza",
+          "description": "Arrival and transfer to hotel, welcome dinner"
+        },
+        {
+          "day": 2,
+          "title": "Baltit Fort & Bazaar",
+          "description": "Explore historic Baltit Fort and local markets"
+        }
+      ],
+      "inclusions": [
+        "Hotel accommodation",
+        "Daily breakfast and dinner",
+        "Transportation",
+        "English-speaking guide"
+      ],
+      "gallery": [
+        "/images/tours/hunza1.jpg",
+        "/images/tours/hunza2.jpg",
+        "/images/tours/hunza3.jpg"
+      ],
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Skardu Adventure",
+      "description": "Discover the magic of Skardu and its surrounding areas",
+      "price": 85000,
+      "duration": "6 days",
+      "location": "Skardu",
+      "image": "/images/tours/skardu.jpg",
+      "highlights": [
+        "Deosai Plains visit",
+        "Shigar Fort tour",
+        "Upper Kachura Lake",
+        "Desert safari"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Skardu",
+          "description": "Airport pickup and hotel check-in"
+        },
+        {
+          "day": 2,
+          "title": "Deosai Plains",
+          "description": "Full day excursion to Deosai National Park"
+        }
+      ],
+      "inclusions": [
+        "Accommodation",
+        "Meals",
+        "Transport",
+        "Guide services",
+        "Entry fees"
+      ],
+      "gallery": [
+        "/images/tours/skardu1.jpg",
+        "/images/tours/skardu2.jpg",
+        "/images/tours/skardu3.jpg"
+      ],
+      "featured": false
+    }
+  ]
+} 

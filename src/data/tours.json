@@ -1,0 +1,924 @@
+{
+  "tours": [
+    {
+      "id": "1",
+      "title": "Tour to Gilgit Baltistan",
+      "descr": "A 14-day tour to Gilgit Baltistan for 10 persons, including quality hotel stays, transport in Landcruisers and a van, English speaking guides, complimentary breakfast and dinner, and various cultural experiences.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "110,000/-",
+      "internay": {
+        "Day 1": "Malaysia to Islamabad: Pick up from Airport. Dinner at the restaurant and check-in at a hotel in Islamabad/Rawalpindi. Night Stay: Islamabad",
+        "Day 2": "Islamabad to Skardu (By Air) Lakes Day: Pick up from Airport, Gamba Skardu, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the lake, Soq Kachura. Night Stay: Skardu Valley",
+        "Day 3": "Waterfalls Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthkha Waterfall (One of the largest waterfalls of Pakistan), Kharmang River, and move towards Khaplu valley. On the way, we will see Shiyok River, Keris village, Yugu, Balghar, Ghuwari Village, and Barah village. Night Stay: Khaplu Valley",
+        "Day 4": "Khaplu Valley: Khaplu Ancient Fort, Saling River, Saling Bridge, Saling Meadow and Stream, Saling Fish Farm, Sogha Lake. Night Stay: Khaplu Valley",
+        "Day 5": "Fort Day (Shigar): Gol, Keris, Ghuwari, Shyok River, Kishal Cherry Garden (Largest Cherry Garden of the Country), Yugu, Balghar, Kharfaq, Daghoni, Barah, Thorgo, Shigar Bridge, Sarfaranga Cold Desert, Shigar Viewpoint, Shigar Village, Shigar Fort, Blind Lake & Return to Skardu Valley. Night Stay: Skardu Valley",
+        "Day 6": "Chunda Valley: Gamba, Chunda Valley, Tandal Sightseeing, Maltoro Bridge, and Skardu Market. Night Stay: Skardu Valley",
+        "Day 7": "Deosai (Roof of the World): After breakfast move towards Sadpara Lake, Sadpara village, Deosai Top, Kala Pani, Barha Pani, and Sheosar Lake (if not heavy snowfall). Night Stay: Skardu Valley",
+        "Day 8": "Skardu to Minapin (Nagar): Gamba Skardu, Kachura Bridge, Baghicha, Dambudas, Villages of Rondu, Stak, Shingus, Haramosh, Juglote-Skardu Bridge, Gilgit City, Danyore, Sultanabad, Jutal, Chimish Das, Nagar River, Rakaposhi Viewpoint, Rakaposhi Zero-point, Minapin (Nagar Valley). Night Stay: Minapin (Nagar Valley)",
+        "Day 9": "Hopper Valley and Karimabad: Minapin-Nagar Road, Sumayir, Hopper Valley, Ganish, Karimabad Bazar, Karimabad Hunza. Night Stay: Karimabad Hunza",
+        "Day 10": "Khunjerab (Border Day): KKH, Ganish, Hunza Sacred Rocks, Ata-abad Tunnels, Ata-Abad Lake (Boating), Passu Cones, Hussaini Village, Hussaini Suspension Bridge, Passu Village, Passu Cones, Gulmit, Gojal, Sost Dryport, Khunjerab National Park, Pak-China Border. Night Stay: Karimabad Hunza",
+        "Day 11": "Forts Day (Karimabad): Altit Fort, Baltit Fort, visit Hunza Traditional Market and move towards Gilgit via Nagar, KKH. Night Stay: Gilgit.",
+        "Day 12": "Gupis Valley (Ghizer): Shandur-Gilgit Road, Gahkuch, Sher Qillah, Gupis, Khelti Lake and Return to Gilgit. Night Stay: Gilgit.",
+        "Day 13": "Gilgit to Islamabad (by air): Airport pick-up from Islamabad Airport, Visit Faisal Masjid, Lok Virsa, Centaurus, and Chai Mehfil for Dinner. Night Stay: Islamabad/Rawalpindi",
+        "Day 14": "Farewell at Islamabad Airport"
+      },
+      "seesighting": {
+        "Day 1": [],
+        "Day 2": [
+          "Gamba Skardu",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake",
+          "Soq Kachura"
+        ],
+        "Day 3": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthkha Waterfall",
+          "Kharmang River",
+          "Shiyok River",
+          "Keris village",
+          "Yugu",
+          "Balghar",
+          "Ghuwari Village",
+          "Barah village"
+        ],
+        "Day 4": [
+          "Khaplu Ancient Fort",
+          "Saling River",
+          "Saling Bridge",
+          "Saling Meadow and Stream",
+          "Saling Fish Farm",
+          "Sogha Lake"
+        ],
+        "Day 5": [
+          "Gol",
+          "Keris",
+          "Ghuwari",
+          "Shyok River",
+          "Kishal Cherry Garden",
+          "Yugu",
+          "Balghar",
+          "Kharfaq",
+          "Daghoni",
+          "Barah",
+          "Thorgo",
+          "Shigar Bridge",
+          "Sarfaranga Cold Desert",
+          "Shigar Viewpoint",
+          "Shigar Village",
+          "Shigar Fort",
+          "Blind Lake"
+        ],
+        "Day 6": [
+          "Gamba",
+          "Chunda Valley",
+          "Tandal Sightseeing",
+          "Maltoro Bridge",
+          "Skardu Market"
+        ],
+        "Day 7": [
+          "Sadpara Lake",
+          "Sadpara village",
+          "Deosai Top",
+          "Kala Pani",
+          "Barha Pani",
+          "Sheosar Lake"
+        ],
+        "Day 8": [
+          "Gamba Skardu",
+          "Kachura Bridge",
+          "Baghicha",
+          "Dambudas",
+          "Villages of Rondu",
+          "Stak",
+          "Shingus",
+          "Haramosh",
+          "Juglote-Skardu Bridge",
+          "Gilgit City",
+          "Danyore",
+          "Sultanabad",
+          "Jutal",
+          "Chimish Das",
+          "Nagar River",
+          "Rakaposhi Viewpoint",
+          "Rakaposhi Zero-point"
+        ],
+        "Day 9": [
+          "Sumayir",
+          "Hopper Valley",
+          "Ganish",
+          "Karimabad Bazar",
+          "Karimabad Hunza"
+        ],
+        "Day 10": [
+          "KKH",
+          "Ganish",
+          "Hunza Sacred Rocks",
+          "Ata-abad Tunnels",
+          "Ata-Abad Lake",
+          "Passu Cones",
+          "Hussaini Village",
+          "Hussaini Suspension Bridge",
+          "Passu Village",
+          "Passu Cones",
+          "Gulmit",
+          "Gojal",
+          "Sost Dryport",
+          "Khunjerab National Park",
+          "Pak-China Border"
+        ],
+        "Day 11": [
+          "Altit Fort",
+          "Baltit Fort",
+          "Hunza Traditional Market"
+        ],
+        "Day 12": [
+          "Shandur-Gilgit Road",
+          "Gahkuch",
+          "Sher Qillah",
+          "Gupis",
+          "Khelti Lake"
+        ],
+        "Day 13": [
+          "Faisal Masjid",
+          "Lok Virsa",
+          "Centaurus",
+          "Chai Mehfil"
+        ],
+        "Day 14": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay: 3 Rooms ",
+        "Transport: 2 Landcruisers (4x4) for Gilgit Baltistan, 1 Comfortable Van for Islamabad ",
+        "English Speaking Local Driver cum Guide in Gilgit Baltistan ",
+        "English Speaking Guide for Islamabad (2 Days) ",
+        "Complimentary Breakfast (12) ",
+        "Complimentary Dinner (12) ",
+        "BBQ Night ",
+        "1 Traditional Baltistani Dinner with Bonfire in Skardu (Dishes of Gilgit Baltistan) ",
+        "Invitation Letter ",
+        "Toll Taxes ",
+        "All Fuel ",
+        "Parking Fees "
+      ],
+      "exclusions": [
+        "Lunch ",
+        "Tickets for airplanes, National parks, forts, boats, other recreational activities, etc. ",
+        "Extra expenses due to acts of nature and political reasons ",
+        "All the expenses which are not included in the “Inclusions” ",
+        "Payments are non-refundable "
+      ]
+    },
+    {
+      "id": "2",
+      "title": "4 Days Tour to Skardu",
+      "descr": "A 4-day tour to Skardu , including quality hotel stay, transport in Landcruisers, complimentary breakfast, lunch, and dinner, meeting space, and experienced local guides.",
+      "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"
+
+        
+
+
+      ],
+      "price": "80,000/-",
+      "internay": {
+        "Day 01 ": "Skardu (By Air) Lakes Day: Airport pickup and move towards Kachura Village, visit Shangrila Resort, Lower Kachura Lake, Upper Kachura Lake (Boating in the lake), Lunch at Kachura Valley, Katpana Lake, Katpana Meadow & Katpana Cold Desert. Night Stay: Skardu Valley",
+        "Day 2 ": "Meeting Day: Full day meeting, tea breaks, lunch, BBQ at night.",
+        "Day 3 ": "Waterfalls Day: Hussainabad, Thorgo, Shigar River, Sarfaranga Cold Desert (activities like quad biking, horse riding, desert jeep safari= optional), Shigar viewpoint, Serena ancient palace, buffet lunch at palace, Sermik, Villages of Kharmang Valley, Mehdi-abad, Kharmang River, Manthokha Waterfall.",
+        "Day 4 ": "Farewell: After breakfast, drop the guests at Skardu Airport and farewell with delightful memories."
+      },
+      "seesighting": {
+        "Day 01 ": [
+          "Kachura Village",
+          "Shangrila Resort",
+          "Lower Kachura Lake",
+          "Upper Kachura Lake",
+          "Katpana Lake",
+          "Katpana Meadow",
+          "Katpana Cold Desert"
+        ],
+        "Day 2 ": [],
+        "Day 3": [
+          "Hussainabad",
+          "Thorgo",
+          "Shigar River",
+          "Sarfaranga Cold Desert",
+          "Shigar viewpoint",
+          "Serena ancient palace",
+          "Sermik",
+          "Villages of Kharmang Valley",
+          "Mehdi-abad",
+          "Kharmang River",
+          "Manthokha Waterfall"
+        ],
+        "Day 4 ": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay (Twin Sharing/18 Rooms) ",
+        "12 Landcruiser TZ/TX ",
+        "Complimentary Breakfast, Lunch and Dinner ",
+        "Meeting Space, Multimedia for a day with 2 tea breaks ",
+        "Experienced Local Derivers cum Guides ",
+        "BBQ Night & Bonfire "
+      ],
+      "exclusions": [
+        "Tickets for resorts entry, boating, other recreational activities, etc. ",
+        "Extra expenses due to acts of nature, weather, and political reasons ",
+        "All the expenses which are not included in the “Inclusions” ",
+        "Payments are non-refundable "
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Tour to Skardu (04 Nights 05 Days )",
+      "descr": "A 5-day tour to Skardu with luxury stay, transport in Land Cruiser, breakfast, storytelling session, experienced guide, airport transfers, traditional meal, entry tickets, and parking fee.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "200,000/-",
+      "internay": {
+        "Day 1": "Dubai to Skardu (ByAir). Night Stay: Skardu City",
+        "Day 2": "Shigar Valey. Night Stay: Skardu City",
+        "Day 3": "Waterfal Day. Night Stay: Khaplu Valey",
+        "Day 4": "City Tour Visits & Sightseeing: Skardu Local Market, Sadpara Lake, Buddhist Ancient Spiritual Site (Manthal Buddha Rock), Kharpocho Ancient Fort , Story-teling session at the Kharpocho Fort, and Traditional Dinner in Local Home. Night Stay: : Skardu City",
+        "Day 5": "Skardu to Islamabad (Farewel) Airport drop of and farewel with unforgettable memories (IA)."
+      },
+      "seesighting": {
+        "Day 1": [],
+        "Day 2": [
+          "Shigar Valey"
+        ],
+        "Day 3": [
+          "Waterfal Day"
+        ],
+        "Day 4": [
+          "Skardu Local Market",
+          "Sadpara Lake",
+          "Buddhist Ancient Spiritual Site (Manthal Buddha Rock)",
+          "Kharpocho Ancient Fort"
+        ],
+        "Day 5": []
+      },
+      "inclusion": [
+        "Luxury Stay ",
+        "Vehicle (Land Cruiser) ",
+        "Breakfast (04) ",
+        "Story Teling Session ",
+        "Local Experienced Driver cum Guide ",
+        "Airport to Airport Pick & Drop ",
+        "Traditional Meal at Local Home ",
+        "Comfortable Transport (Land Cruiser TZ/TX) ",
+        "Entry Tickets ",
+        "Parking Fee ",
+        "Al fuel "
+      ],
+      "exclusions": [
+        "Expenses due to Act of God etc. ",
+        "Expenses due to flight cancelation ",
+        "Medical Charges ",
+        "Airline Ticket ",
+        "Lunch and Dinner ",
+        "Anything Not Mentioned in “Inclusions” "
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Tour to Gilgit Baltistan(6 Days Economy)",
+      "descr": "A 6-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced guide, and airport transfers.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "95,000/-",
+      "internay": {
+        "Day 1": "Islamabad to Skardu (By Air) Lakes Day: Pick up from Airport, Gamba Skardu, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the Lake. Night Stay: Skardu Valley",
+        "Day 2": "Waterfall Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthkha Waterfall (One of the Largest Waterfalls of Pakistan), Kharmang River, Keris, Ghuwari, Shyok River, Yugu, Balghar, Kharfaq, Daghoni, Barah, Khaplu Valley, Khaplu Fort. Night Stay: Khaplu Valley",
+        "Day 3": "Khaplu Valley: Saling River & Village, Saling Meadow & Stream, Sogha Lake, Saling Fish Farm, Return to Skardu after Visiting Thorgo, Shigar Bridge, Sarfaranga Cold Desert. Night Stay: Skardu Valley",
+        "Day 4": "Skardu to Hunza Nagar: Gamba Skardu, Kachura Bridge, Baghicha, Dambudas, Villages of Rondu, Stak, Shingus, Haramosh, Juglote-Skardu Bridge, Gilgit City, Danyore, Sultanabad, Jutal, Chimish Das, Nagar River, Rakaposhi Viewpoint. Night Stay: Hunza Nagar",
+        "Day 5": "Karimabad and Ata-Abad: Ali-abad, Karimabad Hunza, Altit Fort, Baltit Fort, Ata-abad Tunnel, Ata-abad Lake (Boating in Ata-abad Lake) and Return to Gilgit. Night Stay: Gilgit",
+        "Day 6": "Gilgit to Islamabad (Farewell)"
+      },
+      "seesighting": {
+        "Day 1": [
+          "Gamba Skardu",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake"
+        ],
+        "Day 2": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthkha Waterfall",
+          "Kharmang River",
+          "Keris",
+          "Ghuwari",
+          "Shyok River",
+          "Yugu",
+          "Balghar",
+          "Kharfaq",
+          "Daghoni",
+          "Barah",
+          "Khaplu Valley",
+          "Khaplu Fort"
+        ],
+        "Day 3": [
+          "Saling River & Village",
+          "Saling Meadow & Stream",
+          "Sogha Lake",
+          "Saling Fish Farm",
+          "Thorgo",
+          "Shigar Bridge",
+          "Sarfaranga Cold Desert"
+        ],
+        "Day 4": [
+          "Gamba Skardu",
+          "Kachura Bridge",
+          "Baghicha",
+          "Dambudas",
+          "Villages of Rondu",
+          "Stak",
+          "Shingus",
+          "Haramosh",
+          "Juglote-Skardu Bridge",
+          "Gilgit City",
+          "Danyore",
+          "Sultanabad",
+          "Jutal",
+          "Chimish Das",
+          "Nagar River",
+          "Rakaposhi Viewpoint"
+        ],
+        "Day 5": [
+          "Ali-abad",
+          "Karimabad Hunza",
+          "Altit Fort",
+          "Baltit Fort",
+          "Ata-abad Tunnel",
+          "Ata-abad Lake"
+        ],
+        "Day 6": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay []",
+        "Complimentary Breakfast (5) []",
+        "Toyota Premio / G Corolla []",
+        "All fuel []",
+        "Local Experienced Driver cum Guide []",
+        "Parking Fee []",
+        "Airport to Airport Pick & Drop []"
+      ],
+      "exclusions": [
+        "Dinner & Lunch ",
+        "Fort Entry Tickets ",
+        "Boating ",
+        "Adventure Sports ",
+        "Expenses due to Act of God etc. [11]",
+        "Medical Charges [11]",
+        "Air Tickets [11]",
+        "Anything not Mentioned in “Inclusions” [11]"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "GROUP TOUR TO SKARDU -",
+      "descr": "A 4-day group tour to Skardu, including hotel stays at Tibet Hotel/Shangrila Resort Kachura Lake and Dynasty Skardu, transport in Land Cruisers, all meals as specified, guides, toll taxes, parking fee, bonfire, BBQ, Landcruiser Safari, group boating, and a professional photographer.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "76,400/-",
+      "internay": {
+        "Day 1": "Islamabad to Skardu (By Air) Waterfall Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthokha Waterfall, Junction of Shyok and Kharmang River, Kharmang River, Sarfaranga Cold Desert (adventure sports @ desert). Pick-up from Skardu Airport, Villages of Kharmang Valley, Visit Largest Waterfall (Manthokha Waterfall), Lunch at Hotel Himalaya / Manthokha, Visit Sarfaranga Cold Desert (Adventure Sports), Bonfire and BBQ at Hoto Chumik / Api Soq / Chumik Bridge. Night Stay: Dynasty Skardu",
+        "Day 02": "Lakes Day: Gamba Skardu, Hoto, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the lake, Soq Kachura. Boating activities at Upper Kachura Lake, Visit Soq Village, Lunch at Upper Kachura / Soq Village, Check in Shagrila Resort / Tibet Hotel Kachura Lake, Dinner at Tibet Hotel Shangrila. Night Stay: Tibet Hotel Kachura Lake / Shangrila Resort Kachura Lake",
+        "Day 3": "Basho Valley: Kachura Bridge, Sari, JSR, Basho Bridge, Basho Waterfall, Villages of Basho Valley, Sultanabad, Basho Meadow, and Jungle. Breakfast at Tibet Hotel / Shangrila Resort, Sightseeing of Kachura Bridge, Sari, GSR, Basho Bridge, and Basho Waterfall, Explore the Villages of Basho, Visit Sultanabad, Explore Basho Meadows, Buffet Lunch at Basho Meadows, Explore Basho Jungle, Traditional Dinner at Skardu. Night Stay: Dynasty Skardu",
+        "Day 4": "Drop off and Farewell @Skardu Airport: Breakfast at the hotel, Drop off and farewell at Skardu Airport"
+      },
+      "seesighting": {
+        "Day 1": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthokha Waterfall",
+          "Junction of Shyok and Kharmang River",
+          "Kharmang River",
+          "Sarfaranga Cold Desert",
+          "Villages of Kharmang Valley"
+        ],
+        "Day 02": [
+          "Gamba Skardu",
+          "Hoto",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake",
+          "Soq Kachura",
+          "Soq Village"
+        ],
+        "Day 3": [
+          "Kachura Bridge",
+          "Sari",
+          "JSR",
+          "Basho Bridge",
+          "Basho Waterfall",
+          "Villages of Basho Valley",
+          "Sultanabad",
+          "Basho Meadow",
+          "Basho Jungle"
+        ],
+        "Day 4": []
+      },
+      "inclusion": [
+        "Hotel Stay: Tibet Hotel Kachura Lake / Shangrila Resort Kachura Lake (24 Rooms for One Night with extra mattresses), Dynasty Skardu (24 Rooms for Two Night with extra mattresses) ",
+        "Transport: 17 Land cruisers TZ/TX ",
+        "All Fuel ",
+        "17 Local Experienced Drivers ",
+        "1 Tea plus Snacks (for 3 Days) ",
+        "Team of Guides ",
+        "All Toll Taxes and Parking Fee ",
+        "Bonfire and BBQ Night (Hoto Chumik / Soq Village / Api Soq) ",
+        "Breakfast (03 / Complimentary), Lunch (03), and Dinner (01 + 01 Traditional) ",
+        "Landcruiser Safari at Sarfaranga Cold Desert ",
+        "Group Boating at Upper Kachura Lake ",
+        "Professional Photographer for 4 Days (Pictures, Videos and Drone Videography) "
+      ],
+      "exclusions": [
+        "Boating and Other Sport Activities ",
+        "Entry Tickets ",
+        "Expenses due to Act of Nature ",
+        "Medical Charges ",
+        "Air Tickets ",
+        "Expenses due to Flight Cancellation ",
+        "Not Anything Mentioned in “INCLUSIONS” ",
+        "Payment is non-refundable "
+      ]
+    },
+    {
+      "id": "6",
+      "title": "HONEYMOON TOUR TO SKARDU (GILGIT BALTISTAN)",
+      "descr": "A honeymoon tour to Skardu including quality hotel stay, transport in Landcruiser, all fuel, experienced guide, toll taxes, parking fee, bonfire, breakfast & dinner, traditional dinners, a candlelight dinner, traditional Sufi/Ghazal Night, and Hi-Tea.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "90,000/-",
+      "internay": {
+        "Day 1": "Islamabad to Skardu (By Air) Lakes Day: Pick up from Airport, Gamba Skardu, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the lake, Soq Kachura. Night Stay: Skardu",
+        "Day 2": "Waterfalls Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthkha Waterfall, Kharmang River, Shyok River, Kishal Cherry Garden (Largest Cherry Garden), Yugu, Balghar, Kharfaq, Daghoni, Barah, Khaplu Valley. Night Stay: Khaplu",
+        "Day 3": "Saling Valley: Khaplu Fort, Khaplu Broq, Chaqchan Masjid, Saling River & Village, Saling Meadow & Stream, Saling Fish Farm, Barah, Balghar, Ghuwari, Yugu, Keris, Gol, Skardu. Night Stay: Skardu Valley",
+        "Day 4": "Fort Day (Shigar): Hussainabad, Thorgo, Shigar Bridge, Sarfaranga Cold Desert, Shigar Viewpoint, Shigar Village, Shigar Fort, Blind Lake & Return to Skardu Valley. Night Stay: Skardu Valley",
+        "Day 5": "Organic Village & Hi-Tea @Nangxoq: Sadpara Lake, Buddha Ancient Rock, Manthal Stream, Hike to Kharpocho , Organic Village & Hi Tea near Nangxoq Village (River Bank). Night Stay: Skardu Valley",
+        "Day 6": "Chunda Valley: Gamba, Chunda Valley, Tandal Sightseeing, Maltoro Bridge, Skardu Market. Ghazal Night & Candlelight Dinner. Night Stay: Skardu Valley",
+        "Day 7": "Drop off and Farewell @Skardu Airport"
+      },
+      "seesighting": {
+        "Day 1": [
+          "Gamba Skardu",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake",
+          "Soq Kachura"
+        ],
+        "Day 2": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthkha Waterfall",
+          "Kharmang River",
+          "Shyok River",
+          "Kishal Cherry Garden",
+          "Yugu",
+          "Balghar",
+          "Kharfaq",
+          "Daghoni",
+          "Barah",
+          "Khaplu Valley"
+        ],
+        "Day 3": [
+          "Khaplu Fort",
+          "Khaplu Broq",
+          "Chaqchan Masjid",
+          "Saling River & Village",
+          "Saling Meadow & Stream",
+          "Saling Fish Farm",
+          "Barah",
+          "Balghar",
+          "Ghuwari",
+          "Yugu",
+          "Keris",
+          "Gol"
+        ],
+        "Day 4": [
+          "Hussainabad",
+          "Thorgo",
+          "Shigar Bridge",
+          "Sarfaranga Cold Desert",
+          "Shigar Viewpoint",
+          "Shigar Village",
+          "Shigar Fort",
+          "Blind Lake"
+        ],
+        "Day 5": [
+          "Sadpara Lake",
+          "Buddha Ancient Rock",
+          "Manthal Stream",
+          "Kharpocho",
+          "Organic Village near Nangxoq Village"
+        ],
+        "Day 6": [
+          "Gamba",
+          "Chunda Valley",
+          "Tandal Sightseeing",
+          "Maltoro Bridge",
+          "Skardu Market"
+        ],
+        "Day 7": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay ",
+        "Transport: Landcruiser TZ/TX ",
+        "All Fuel ",
+        "Local Experienced Driver cum Guide ",
+        "All Toll Taxes and Parking Fee ",
+        "Bonfire ",
+        "Breakfast & Dinner ",
+        "Traditional Dinner @Skardu (Dishes of Gilgit Baltistan) [16, 17]",
+        "Candle-light dinner [16, 18]",
+        "Traditional Sufi/Ghazal Night for the couple ",
+        "Hi-Tea @Riverbank near Nangxoq Organic Village "
+      ],
+      "exclusions": [
+        "Lunch ",
+        "Fort Entry Tickets ",
+        "Boating ",
+        "Expenses due to act of God etc ",
+        "Medical charges ",
+        "Air Tickets ",
+        "Anything Not Mentioned in “inclusions” "
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Tour to Gilgit Baltistan - (7 Days Economy - NN)",
+      "descr": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "175,000/-",
+      "internay": {
+        "Day 1": "Islamabad to Skardu (By Air) Lakes Day: Pick up from Airport, Gamba Skardu, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the lake. Night Stay: Skardu Valley",
+        "Day 2": "Waterfall Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthkha Waterfall (one of the largest waterfalls of Pakistan), Kharmang River, Keris, Ghuwari, Shyok River, Yugu, Balghar, Kharfaq, Daghoni, Barah, Khaplu Valley, Khaplu Fort. Night Stay: Khaplu Valley",
+        "Day 3": "Khaplu Valley: Saling River & Village, Saling Meadow & Stream, Sogha Lake, Saling Fish Farm, Return to Skardu after visiting Thorgo, Shigar Bridge, Sarfaranga Cold Desert, Shigar View Point, Shigar Village, Shigar Fort, Blind Lake. Night Stay: Shigar/Skardu Valley",
+        "Day 4": "Skardu to Gilgit: Gamba Skardu, Kachura Bridge, Baghicha, Dambudas, Villages of Rondu, Stak, Shingus, Haramosh, Juglote-Skardu Bridge, Gilgit City. Night Stay: Gilgit",
+        "Day 5": "Gilgit to Karimabad: Danyore, Sultanabad, Jutal, Chimish Das, Nagar River, Rakaposhi Viewpoint, Rakaposhi Zero-point, Ali-abad, Karimabad Hunza. Night Stay: Karimabad",
+        "Day 6": "Khunjerab (Border Day): KKH, Ganish, Hunza Sacred Rocks, Ata-abad Tunnels, Ata-Abad Lake (Boating), Hussaini Village, Hussaini Suspension Bridge, Passu Village, Passu Cones. Night Stay: Gilgit",
+        "Day 7": "Gilgit to Islamabad (Farewell)"
+      },
+      "seesighting": {
+        "Day 1": [
+          "Gamba Skardu",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake"
+        ],
+        "Day 2": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthkha Waterfall",
+          "Kharmang River",
+          "Keris",
+          "Ghuwari",
+          "Shyok River",
+          "Yugu",
+          "Balghar",
+          "Kharfaq",
+          "Daghoni",
+          "Barah",
+          "Khaplu Valley",
+          "Khaplu Fort"
+        ],
+        "Day 3": [
+          "Saling River & Village",
+          "Saling Meadow & Stream",
+          "Sogha Lake",
+          "Saling Fish Farm",
+          "Thorgo",
+          "Shigar Bridge",
+          "Sarfaranga Cold Desert",
+          "Shigar View Point",
+          "Shigar Village",
+          "Shigar Fort",
+          "Blind Lake"
+        ],
+        "Day 4": [
+          "Gamba Skardu",
+          "Kachura Bridge",
+          "Baghicha",
+          "Dambudas",
+          "Villages of Rondu",
+          "Stak",
+          "Shingus",
+          "Haramosh",
+          "Juglote-Skardu Bridge",
+          "Gilgit City"
+        ],
+        "Day 5": [
+          "Danyore",
+          "Sultanabad",
+          "Jutal",
+          "Chimish Das",
+          "Nagar River",
+          "Rakaposhi Viewpoint",
+          "Rakaposhi Zero-point",
+          "Ali-abad",
+          "Karimabad Hunza"
+        ],
+        "Day 6": [
+          "KKH",
+          "Ganish",
+          "Hunza Sacred Rocks",
+          "Ata-abad Tunnels",
+          "Ata-Abad Lake",
+          "Hussaini Village",
+          "Hussaini Suspension Bridge",
+          "Passu Village",
+          "Passu Cones"
+        ],
+        "Day 7": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay ",
+        "Complimentary Breakfast (6) ",
+        "Toyota Premio / G Corolla ",
+        "All fuel ",
+        "Local Experienced Driver cum Guide ",
+        "Parking fee ",
+        "Airport to Airport Pick & Drop "
+      ],
+      "exclusions": [
+        "Dinner & Lunch ",
+        "Fort Entry Tickets ",
+        "Boating ",
+        "Adventure Sports ",
+        "Expenses due to Act of God etc. ",
+        "Medical Charges ",
+        "Air Tickets ",
+        "Anything not Mentioned in “Inclusions” "
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Tour to Gilgit Baltistan -(7 Days Economy - New1)",
+      "descr": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
+   "images": [
+        "public/images/1.jpg",
+        "public/images/2.jpg",
+        "public/images/3.jpg",
+        "public/images/4.jpg",
+        "public/images/5.jpg",
+        "public/images/6.jpg",
+        "public/images/7.jpg",
+        "public/images/8.jpg",
+        "public/images/9.jpg",
+        "public/images/10.jpg",
+        "public/images/11.jpg",
+        "public/images/12.jpg",
+        "public/images/13.jpg",
+        "public/images/14.jpg",
+        "public/images/15.jpg",
+        "public/images/16.jpg",
+        "public/images/17.jpg",
+        "public/images/18.jpg",
+        "public/images/19.jpg"      ],
+      "price": "175,000/-",
+      "internay": {
+        "Day 1": "Islamabad to Skardu (By Air) Lakes Day: Pick up from Airport, Gamba Skardu, Shangrila Lake & Resort, Kachura Village, Upper Kachura Lake, Boating in the lake. Night Stay: Skardu Valley",
+        "Day 2": "Waterfall Day: Hussainabad, Sermik, Kharmang Valley, Mehdiabad, Manthkha Waterfall (one of the largest waterfalls of Pakistan), Kharmang River, Keris, Ghuwari, Shyok River, Yugu, Balghar, Kharfaq, Daghoni, Barah, Khaplu Valley, Khaplu Fort. Night Stay: Khaplu Valley",
+        "Day 3": "Khaplu Valley: Saling River & Village, Saling Meadow & Stream, Sogha Lake, Saling Fish Farm, Return to Skardu after visiting Thorgo, Shigar Bridge, Sarfaranga Cold Desert, Shigar View Point, Shigar Village, Shigar Fort, Blind Lake. Night Stay: Shigar/Skardu Valley",
+        "Day 4": "Skardu to Gilgit: Gamba Skardu, Kachura Bridge, Baghicha, Dambudas, Villages of Rondu, Stak, Shingus, Haramosh, Juglote-Skardu Bridge, Gilgit City. Night Stay: Gilgit",
+        "Day 5": "Gilgit to Karimabad: Danyore, Sultanabad, Jutal, Chimish Das, Nagar River, Rakaposhi Viewpoint, Rakaposhi Zero-point, Ali-abad, Karimabad Hunza. Night Stay: Karimabad",
+        "Day 6": "Khunjerab (Border Day): KKH, Ganish, Hunza Sacred Rocks, Ata-abad Tunnels, Ata-Abad Lake (Boating), Hussaini Village, Hussaini Suspension Bridge, Passu Village, Passu Cones. Night Stay: Gilgit",
+        "Day 7": "Gilgit to Islamabad (Farewell)"
+      },
+      "seesighting": {
+        "Day 1": [
+          "Gamba Skardu",
+          "Shangrila Lake & Resort",
+          "Kachura Village",
+          "Upper Kachura Lake"
+        ],
+        "Day 2": [
+          "Hussainabad",
+          "Sermik",
+          "Kharmang Valley",
+          "Mehdiabad",
+          "Manthkha Waterfall",
+          "Kharmang River",
+          "Keris",
+          "Ghuwari",
+          "Shyok River",
+          "Yugu",
+          "Balghar",
+          "Kharfaq",
+          "Daghoni",
+          "Barah",
+          "Khaplu Valley",
+          "Khaplu Fort"
+        ],
+        "Day 3": [
+          "Saling River & Village",
+          "Saling Meadow & Stream",
+          "Sogha Lake",
+          "Saling Fish Farm",
+          "Thorgo",
+          "Shigar Bridge",
+          "Sarfaranga Cold Desert",
+          "Shigar View Point",
+          "Shigar Village",
+          "Shigar Fort",
+          "Blind Lake"
+        ],
+        "Day 4": [
+          "Gamba Skardu",
+          "Kachura Bridge",
+          "Baghicha",
+          "Dambudas",
+          "Villages of Rondu",
+          "Stak",
+          "Shingus",
+          "Haramosh",
+          "Juglote-Skardu Bridge",
+          "Gilgit City"
+        ],
+        "Day 5": [
+          "Danyore",
+          "Sultanabad",
+          "Jutal",
+          "Chimish Das",
+          "Nagar River",
+          "Rakaposhi Viewpoint",
+          "Rakaposhi Zero-point",
+          "Ali-abad",
+          "Karimabad Hunza"
+        ],
+        "Day 6": [
+          "KKH",
+          "Ganish",
+          "Hunza Sacred Rocks",
+          "Ata-abad Tunnels",
+          "Ata-Abad Lake",
+          "Hussaini Village",
+          "Hussaini Suspension Bridge",
+          "Passu Village",
+          "Passu Cones"
+        ],
+        "Day 7": []
+      },
+      "inclusion": [
+        "Quality Hotel Stay ",
+        "Complimentary Breakfast (6) ",
+        "Toyota Premio / G Corolla ",
+        "All fuel ",
+        "Local Experienced Driver cum Guide ",
+        "Parking fee ",
+        "Airport to Airport Pick & Drop "
+      ],
+      "exclusions": [
+        "Dinner & Lunch ",
+        "Fort Entry Tickets ",
+        "Boating ",
+        "Adventure Sports ",
+        "Expenses due to Act of God etc. ",
+        "Medical Charges ",
+        "Air Tickets ",
+        "Anything not Mentioned in “Inclusions” "
+      ]
+    }
+  ]
+}
