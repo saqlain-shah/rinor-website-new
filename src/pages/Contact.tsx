@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Icon from '../components/shared/Icons';
-// import WhatsAppLink from '../components/shared/WhatsAppLink';
+import Icon, { IconName } from '../components/shared/Icons';
+import WhatsAppLink from '../components/shared/WhatsAppLink';
 
 interface ContactInfo {
-  icon: string;
+  icon: IconName;
   title: string;
   details: string[];
   link?: string;
@@ -19,18 +19,28 @@ const Contact: React.FC = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const whatsappMessage = `*New Inquiry*\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
-    window.open(`https://wa.me/923400596665?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    const message = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/923400596665?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const createWhatsAppMessage = () => {
+    return `*New Inquiry*\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
   };
 
   const contactInfo: ContactInfo[] = [
     {
-      icon: 'Home',
+      icon: 'Map' as IconName,
       title: 'Head Office',
       details: [
         'RINOR (SMC-PVT) LTD',
@@ -40,7 +50,7 @@ const Contact: React.FC = () => {
       ]
     },
     {
-      icon: 'Email',
+      icon: 'Contact' as IconName,
       title: 'Email Addresses',
       details: [
         'info@rinor.pk (General Inquiries)',
@@ -51,7 +61,7 @@ const Contact: React.FC = () => {
       link: 'mailto:info@rinor.pk'
     },
     {
-      icon: 'WhatsApp',
+      icon: 'WhatsApp' as IconName,
       title: 'WhatsApp Business',
       details: [
         'Executive Office: +92 313 5693011',
@@ -65,25 +75,19 @@ const Contact: React.FC = () => {
     {
       platform: 'Facebook',
       url: 'https://facebook.com/rinor.pakistan',
-      icon: 'Facebook',
+      icon: 'Facebook' as IconName,
       username: '@rinor.pakistan'
     },
     {
       platform: 'Instagram',
       url: 'https://instagram.com/rinor.pakistan',
-      icon: 'Instagram',
+      icon: 'Instagram' as IconName,
       username: '@rinor.pakistan'
-    },
-    {
-      platform: 'Twitter',
-      url: 'https://twitter.com/rinor_pakistan',
-      icon: 'Twitter',
-      username: '@rinor_pakistan'
     },
     {
       platform: 'LinkedIn',
       url: 'https://linkedin.com/company/rinor-smc-pvt-ltd',
-      icon: 'LinkedIn',
+      icon: 'LinkedIn' as IconName,
       username: 'RINOR (SMC-PVT) LTD'
     }
   ];
@@ -158,7 +162,7 @@ const Contact: React.FC = () => {
         </motion.div>
 
         {/* Contact Information Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-16">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
           {contactInfo.map((info, index) => (
             <motion.div
               key={index}
@@ -169,7 +173,7 @@ const Contact: React.FC = () => {
             >
               <div className="flex items-center mb-4">
                 <div className="bg-secondary/20 rounded-full p-3 mr-4">
-                  <Icon name={info.icon as any} className="w-6 h-6 text-secondary" />
+                  <Icon name={info.icon} className="w-6 h-6 text-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-white">{info.title}</h3>
               </div>
@@ -182,6 +186,8 @@ const Contact: React.FC = () => {
                 {info.link && (
                   <a
                     href={info.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary hover:text-secondary-light inline-block mt-2"
                   >
                     Contact Now →
@@ -192,38 +198,113 @@ const Contact: React.FC = () => {
           ))}
         </div>
 
+        {/* Contact Form */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="max-w-2xl mx-auto bg-gray-800/50 rounded-xl p-8 mb-16"
+        >
+          <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:border-secondary"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:border-secondary"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:border-secondary"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:border-secondary"
+                required
+              />
+            </div>
+            <WhatsAppLink
+              message={createWhatsAppMessage()}
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center"
+            >
+              <Icon name="WhatsApp" className="w-5 h-5 mr-2" />
+              <span>Send via WhatsApp</span>
+            </WhatsAppLink>
+          </form>
+        </motion.div>
+
         {/* Social Media Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-gray-800/50 rounded-xl p-8 mb-16"
         >
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">Connect With Us</h2>
-          <div className="grid gap-6 md:grid-cols-4">
-            {socialMedia.map((platform, index) => (
+          <h2 className="text-2xl font-bold text-white mb-6">Connect with Us</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {socialMedia.map((social, index) => (
               <a
                 key={index}
-                href={platform.url}
+                href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-4 p-4 bg-gray-700/50 rounded-lg hover:bg-gray-700/70 transition-colors"
+                className="flex items-center p-4 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition-colors"
               >
-                <Icon name={platform.icon as any} className="w-6 h-6 text-secondary" />
+                <Icon name={social.icon} className="w-6 h-6 text-secondary mr-3" />
                 <div>
-                  <div className="text-white font-medium">{platform.platform}</div>
-                  <div className="text-gray-400 text-sm">{platform.username}</div>
+                  <h3 className="text-white font-medium">{social.platform}</h3>
+                  <p className="text-gray-400 text-sm">{social.username}</p>
                 </div>
               </a>
             ))}
           </div>
         </motion.div>
 
-        {/* Department Contacts */}
+        {/* Departments Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gray-800/50 rounded-xl p-8 mb-16"
+          className="bg-gray-800/50 rounded-xl p-8"
         >
+          <h2 className="text-2xl font-bold text-white mb-6">Our Departments</h2>
           <h2 className="text-2xl font-bold text-white mb-8 text-center">Department Contacts</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {departments.map((dept, index) => (
@@ -253,81 +334,6 @@ const Contact: React.FC = () => {
               </div>
             ))}
           </div>
-        </motion.div>
-
-        {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-gray-800/50 rounded-xl p-8"
-        >
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">Send us a Message</h2>
-          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
-            <div className="grid gap-6 mb-6 md:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-300">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="bg-gray-700/50 border border-gray-600 text-white text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="bg-gray-700/50 border border-gray-600 text-white text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5"
-                  required
-                />
-              </div>
-            </div>
-            <div className="mb-6">
-              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-300">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="bg-gray-700/50 border border-gray-600 text-white text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-300">
-                Your Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={4}
-                className="bg-gray-700/50 border border-gray-600 text-white text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-secondary hover:bg-secondary-light text-white font-medium rounded-lg text-sm px-5 py-3 text-center transition-colors"
-            >
-              Send via WhatsApp
-            </button>
-          </form>
         </motion.div>
       </div>
     </div>

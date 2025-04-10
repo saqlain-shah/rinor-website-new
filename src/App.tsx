@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -12,23 +13,24 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tourism" element={<Tourism />} />
-          <Route path="/tour/:id" element={<TourDetail />} />
-          <Route path="/visa-assistance" element={<VisaAssistance />} />
-          <Route path="/air-ticketing" element={<AirTicketing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tourism" element={<Tourism />} />
+            <Route path="/tour/:id" element={<TourDetail />} />
+            <Route path="/visa-assistance" element={<VisaAssistance />} />
+            <Route path="/air-ticketing" element={<AirTicketing />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
 

@@ -29,19 +29,6 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 }
 };
 
-const handleBooking = (fare: FareData) => {
-  const message = encodeURIComponent(
-    `Hi, I'm interested in booking a flight:\n` +
-    `From: ${fare.from}\n` +
-    `To: ${fare.to}\n` +
-    `Airline: ${fare.airline}\n` +
-    `Date: ${fare.date}\n` +
-    `Price: Rs. ${fare.price}\n` +
-    `Updated: ${fare.fare_update_date}`
-  );
-  window.open(`https://wa.me/923400596665?text=${message}`, '_blank');
-};
-
 const AirTicketing: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
@@ -78,7 +65,7 @@ const AirTicketing: React.FC = () => {
     {
       title: 'Best Prices',
       description: 'Guaranteed lowest fares on all flights',
-      icon: 'Price' as IconName
+      icon: 'Star' as IconName
     },
     {
       title: 'Flexible Booking',
@@ -96,6 +83,16 @@ const AirTicketing: React.FC = () => {
       icon: 'Shield' as IconName
     }
   ];
+
+  const createBookingMessage = (fare: FareData) => {
+    return `Hi, I'm interested in booking a flight:\n` +
+      `From: ${fare.from}\n` +
+      `To: ${fare.to}\n` +
+      `Airline: ${fare.airline}\n` +
+      `Date: ${fare.date}\n` +
+      `Price: Rs. ${fare.price}\n` +
+      `Updated: ${fare.fare_update_date}`;
+  };
 
   return (
     <div className="min-h-screen bg-background pt-20 pb-12">
@@ -158,16 +155,16 @@ const AirTicketing: React.FC = () => {
               <motion.div
                 key={fare['s.no']}
                 variants={itemVariants}
-                className="card hover-lift"
+                className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
               >
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-secondary">{fare.airline}</h3>
+                      <h3 className="text-xl font-semibold text-white">{fare.airline}</h3>
                       <p className="text-sm text-gray-400">Updated: {fare.fare_update_date}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-2xl font-bold text-accent">Rs. {fare.price}</p>
+                      <p className="text-2xl font-bold text-secondary">Rs. {fare.price}</p>
                       {fare.discount !== 'N/A' && (
                         <p className="text-sm text-green-500">Discount: {fare.discount}</p>
                       )}
@@ -177,24 +174,25 @@ const AirTicketing: React.FC = () => {
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-400">From:</span>
-                      <span className="font-medium">{fare.from}</span>
+                      <span className="text-white">{fare.from}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-400">To:</span>
-                      <span className="font-medium">{fare.to}</span>
+                      <span className="text-white">{fare.to}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-400">Date:</span>
-                      <span className="font-medium">{fare.date}</span>
+                      <span className="text-white">{fare.date}</span>
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => handleBooking(fare)}
-                    className="btn-primary w-full"
+                  <WhatsAppLink
+                    message={createBookingMessage(fare)}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center"
                   >
-                    Book via WhatsApp
-                  </button>
+                    <Icon name="WhatsApp" className="w-5 h-5 mr-2" />
+                    <span>Book via WhatsApp</span>
+                  </WhatsAppLink>
                 </div>
               </motion.div>
             ))}
@@ -244,18 +242,18 @@ const AirTicketing: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <WhatsAppLink
               message="Hi, I need assistance with flight booking."
-              className="px-8 py-3 rounded-lg flex items-center justify-center gap-2"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg flex items-center justify-center gap-2"
             >
               <Icon name="WhatsApp" className="w-5 h-5" />
-              Chat on WhatsApp
+              <span>Chat on WhatsApp</span>
             </WhatsAppLink>
-            <button
-              onClick={() => window.open(`tel:+923400596665`, '_blank')}
+            <a
+              href="tel:+923400596665"
               className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg flex items-center justify-center gap-2"
             >
               <Icon name="Phone" className="w-5 h-5" />
-              Call Now
-            </button>
+              <span>Call Now</span>
+            </a>
           </div>
         </motion.div>
       </div>

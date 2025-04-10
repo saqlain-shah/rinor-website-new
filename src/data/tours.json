@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Tour to Gilgit Baltistan",
-      "descr": "A 14-day tour to Gilgit Baltistan for 10 persons, including quality hotel stays, transport in Landcruisers and a van, English speaking guides, complimentary breakfast and dinner, and various cultural experiences.",
+      "description": "A 14-day tour to Gilgit Baltistan for 10 persons, including quality hotel stays, transport in Landcruisers and a van, English speaking guides, complimentary breakfast and dinner, and various cultural experiences.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -194,7 +194,7 @@
     {
       "id": "2",
       "title": "4 Days Tour to Skardu",
-      "descr": "A 4-day tour to Skardu , including quality hotel stay, transport in Landcruisers, complimentary breakfast, lunch, and dinner, meeting space, and experienced local guides.",
+      "description": "A 4-day tour to Skardu , including quality hotel stay, transport in Landcruisers, complimentary breakfast, lunch, and dinner, meeting space, and experienced local guides.",
       "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -271,7 +271,7 @@
     {
       "id": "3",
       "title": "Tour to Skardu (04 Nights 05 Days )",
-      "descr": "A 5-day tour to Skardu with luxury stay, transport in Land Cruiser, breakfast, storytelling session, experienced guide, airport transfers, traditional meal, entry tickets, and parking fee.",
+      "description": "A 5-day tour to Skardu with luxury stay, transport in Land Cruiser, breakfast, storytelling session, experienced guide, airport transfers, traditional meal, entry tickets, and parking fee.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -341,7 +341,7 @@
     {
       "id": "4",
       "title": "Tour to Gilgit Baltistan(6 Days Economy)",
-      "descr": "A 6-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced guide, and airport transfers.",
+      "description": "A 6-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced guide, and airport transfers.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -456,7 +456,7 @@
     {
       "id": "5",
       "title": "GROUP TOUR TO SKARDU -",
-      "descr": "A 4-day group tour to Skardu, including hotel stays at Tibet Hotel/Shangrila Resort Kachura Lake and Dynasty Skardu, transport in Land Cruisers, all meals as specified, guides, toll taxes, parking fee, bonfire, BBQ, Landcruiser Safari, group boating, and a professional photographer.",
+      "description": "A 4-day group tour to Skardu, including hotel stays at Tibet Hotel/Shangrila Resort Kachura Lake and Dynasty Skardu, transport in Land Cruisers, all meals as specified, guides, toll taxes, parking fee, bonfire, BBQ, Landcruiser Safari, group boating, and a professional photographer.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -546,7 +546,7 @@
     {
       "id": "6",
       "title": "HONEYMOON TOUR TO SKARDU (GILGIT BALTISTAN)",
-      "descr": "A honeymoon tour to Skardu including quality hotel stay, transport in Landcruiser, all fuel, experienced guide, toll taxes, parking fee, bonfire, breakfast & dinner, traditional dinners, a candlelight dinner, traditional Sufi/Ghazal Night, and Hi-Tea.",
+      "description": "A honeymoon tour to Skardu including quality hotel stay, transport in Landcruiser, all fuel, experienced guide, toll taxes, parking fee, bonfire, breakfast & dinner, traditional dinners, a candlelight dinner, traditional Sufi/Ghazal Night, and Hi-Tea.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -667,7 +667,7 @@
     {
       "id": "7",
       "title": "Tour to Gilgit Baltistan - (7 Days Economy - NN)",
-      "descr": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
+      "description": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",
@@ -795,7 +795,7 @@
     {
       "id": "8",
       "title": "Tour to Gilgit Baltistan -(7 Days Economy - New1)",
-      "descr": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
+      "description": "A 7-day economy tour to Gilgit Baltistan, including quality hotel stay, transport in Toyota Premio/G Corolla, complimentary breakfast, experienced local guide, and airport transfers.",
    "images": [
         "public/images/1.jpg",
         "public/images/2.jpg",

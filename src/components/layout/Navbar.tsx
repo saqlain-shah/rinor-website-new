@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0 flex items-center">
               <img
                 className="h-8 w-auto"
-                src="public/logo-white.png"
+                src="/logo-white.png"
                 alt="RINOR"
               />
             </Link>

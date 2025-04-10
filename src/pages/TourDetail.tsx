@@ -8,19 +8,12 @@ interface Tour {
   id: string;
   title: string;
   description: string;
-  price: number;
-  duration: string;
-  location: string;
-  image: string;
-  highlights: string[];
-  itinerary: Array<{
-    day: number;
-    title: string;
-    description: string;
-  }>;
-  inclusions: string[];
-  gallery: string[];
-  featured: boolean;
+  images: string[];
+  price: string;
+  internay: { [key: string]: string };
+  seesighting: { [key: string]: string[] };
+  inclusion: string[];
+  exclusions: string[];
 }
 
 const TourDetail = () => {
@@ -35,12 +28,14 @@ const TourDetail = () => {
 
   // Function to get the correct image path
   const getImagePath = (imagePath: string) => {
-    // Extract just the number from the image path (e.g., "1" from "public/images/1.jpg")
-    const imageNumber = imagePath.match(/\d+/)?.[0];
-    if (!imageNumber) return '';
+    if (!imagePath) return '';
     
-    // Construct the correct path with uppercase extension
-    return `/images/${imageNumber}.JPG`;
+    // Extract the number from the image path (e.g., "1" from "public/images/1.jpg")
+    const match = imagePath.match(/\d+/);
+    if (!match) return '';
+    
+    // Return the path with correct casing
+    return `/images/${match[0]}.JPG`;
   };
 
   const handleImageError = (index: number) => {
@@ -68,23 +63,20 @@ const TourDetail = () => {
       `Details:\n` +
       `- Tour: ${tour.title}\n` +
       `- Price: ${tour.price}\n` +
-      `- Duration: ${tour.duration}\n\n` +
+      `- Duration: ${Object.keys(tour.internay).length} Days\n\n` +
       `Please provide more information about availability and booking.`;
     
     const whatsappUrl = `https://wa.me/923400596665?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
-  const itineraryDays = Object.entries(tour.itinerary);
-  const sightseeingByDay = Object.entries(tour.highlights);
-
   return (
     <div className="min-h-screen bg-background pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative h-96 rounded-xl overflow-hidden mb-8">
-          {tour.gallery.length > 0 && !imageError[0] ? (
+          {tour.images && tour.images.length > 0 && !imageError[0] ? (
             <img
-              src={getImagePath(tour.gallery[0])}
+              src={getImagePath(tour.images[0])}
               alt={tour.title}
               onError={() => handleImageError(0)}
               className="w-full h-full object-cover"
@@ -99,12 +91,8 @@ const TourDetail = () => {
             <h1 className="text-4xl font-bold text-white mb-2">{tour.title}</h1>
             <div className="flex items-center text-gray-200 space-x-4">
               <div className="flex items-center">
-                <Icon name="Map" className="w-5 h-5 mr-2" />
-                <span>{tour.location}</span>
-              </div>
-              <div className="flex items-center">
                 <Icon name="Calendar" className="w-5 h-5 mr-2" />
-                <span>{tour.duration}</span>
+                <span>{Object.keys(tour.internay).length} Days</span>
               </div>
             </div>
           </div>
@@ -132,20 +120,18 @@ const TourDetail = () => {
               {activeTab === 'overview' && (
                 <div>
                   <p className="text-gray-300 mb-6">{tour.description}</p>
-                  <h3 className="text-xl font-semibold text-white mb-4">Sightseeing Highlights</h3>
-                  <div className="space-y-4">
-                    {sightseeingByDay.map(([day, sights]) => (
-                      sights.length > 0 && (
-                        <div key={day} className="border-l-2 border-secondary pl-4">
-                          <h4 className="text-lg font-semibold text-white mb-2">{day}</h4>
-                          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            {((sights as unknown) as string[]).map((sight: string, index: number) => (
-                              <li key={index} className="flex items-start">
-                                <Icon name="Tourism" className="w-5 h-5 text-secondary mt-1 mr-3" />
-                                <span className="text-gray-300">{sight}</span>
-                              </li>
-                            ))}
-                          </ul>
+                  <h3 className="text-xl font-semibold text-white mb-4">Tour Highlights</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {Object.entries(tour.seesighting).map(([day, sights]) => (
+                      sights && sights.length > 0 && (
+                        <div key={day}>
+                          <h4 className="text-white font-semibold mb-2">{day}</h4>
+                          {sights.map((sight, index) => (
+                            <div key={index} className="flex items-start mb-2">
+                              <Icon name="Tourism" className="w-5 h-5 text-secondary mt-1 mr-3" />
+                              <span className="text-gray-300">{sight}</span>
+                            </div>
+                          ))}
                         </div>
                       )
                     ))}
@@ -155,10 +141,10 @@ const TourDetail = () => {
 
               {activeTab === 'itinerary' && (
                 <div className="space-y-6">
-                  {itineraryDays.map(([day, { title, description }]) => (
+                  {Object.entries(tour.internay).map(([day, description]) => (
                     <div key={day} className="border-l-2 border-secondary pl-4">
                       <h3 className="text-lg font-semibold text-white mb-2">
-                        {title}
+                        {day}
                       </h3>
                       <p className="text-gray-300">{description}</p>
                     </div>
@@ -171,9 +157,20 @@ const TourDetail = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-4">Inclusions</h3>
                     <ul className="space-y-3">
-                      {tour.inclusions.map((item, index) => (
+                      {tour.inclusion.map((item, index) => (
                         <li key={index} className="flex items-start">
                           <Icon name="Check" className="w-5 h-5 text-green-500 mt-1 mr-3" />
+                          <span className="text-gray-300">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-4">Exclusions</h3>
+                    <ul className="space-y-3">
+                      {tour.exclusions.map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <Icon name="Document" className="w-5 h-5 text-red-500 mt-1 mr-3" />
                           <span className="text-gray-300">{item}</span>
                         </li>
                       ))}
@@ -184,7 +181,7 @@ const TourDetail = () => {
 
               {activeTab === 'gallery' && (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {tour.gallery.map((image, index) => (
+                  {tour.images.map((image, index) => (
                     !imageError[index] && (
                       <div key={index} className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                         <img
@@ -205,7 +202,7 @@ const TourDetail = () => {
             <div className="bg-gray-800/50 rounded-xl p-6 sticky top-24">
               <div className="text-center mb-6">
                 <p className="text-3xl font-bold text-white">
-                  {tour.price}
+                  PKR {tour.price}
                 </p>
                 <p className="text-gray-400">per person</p>
               </div>
@@ -219,11 +216,7 @@ const TourDetail = () => {
               <div className="mt-6 space-y-4">
                 <div className="flex items-center text-gray-300">
                   <Icon name="Calendar" className="w-5 h-5 text-secondary mr-3" />
-                  <span>{tour.duration}</span>
-                </div>
-                <div className="flex items-center text-gray-300">
-                  <Icon name="Map" className="w-5 h-5 text-secondary mr-3" />
-                  <span>{tour.location}</span>
+                  <span>{Object.keys(tour.internay).length} Days</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Icon name={"Phone" as IconName} className="w-5 h-5 text-secondary mr-3" />
