@@ -55,10 +55,20 @@ const AirTicketing: React.FC = () => {
     fetchFares();
   }, []);
 
-  const filteredFares = fares.filter(fare =>
-    fare.airline.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    fare.to.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    fare.from.toLowerCase().includes(searchTerm.toLowerCase())
+  // Filter fares from Skardu
+  const fromSkarduFares = fares.filter(fare => 
+    fare.from.toLowerCase().includes('skardu') &&
+    (searchTerm === '' || 
+      fare.to.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      fare.airline.toLowerCase().includes(searchTerm.toLowerCase()))
+  );
+
+  // Filter fares to Skardu
+  const toSkarduFares = fares.filter(fare => 
+    fare.to.toLowerCase().includes('skardu') &&
+    (searchTerm === '' || 
+      fare.from.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      fare.airline.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
   const features: { title: string; description: string; icon: IconName }[] = [
@@ -94,6 +104,50 @@ const AirTicketing: React.FC = () => {
       `Updated: ${fare.fare_update_date}`;
   };
 
+  // Render fare card component
+  const FareCard = ({ fare }: { fare: FareData }) => (
+    <motion.div
+      variants={itemVariants}
+      className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 p-6"
+    >
+      <div className="flex justify-between items-start mb-4">
+        <div>
+          <h3 className="text-xl font-semibold text-white">{fare.airline}</h3>
+          <p className="text-sm text-gray-400">Updated: {fare.fare_update_date}</p>
+        </div>
+        <div className="text-right">
+          <p className="text-2xl font-bold text-secondary">Rs. {fare.price}</p>
+          {fare.discount !== 'N/A' && (
+            <p className="text-sm text-green-500">Discount: {fare.discount}</p>
+          )}
+        </div>
+      </div>
+
+      <div className="space-y-2 mb-4">
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-400">From:</span>
+          <span className="text-white">{fare.from}</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-400">To:</span>
+          <span className="text-white">{fare.to}</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-400">Date:</span>
+          <span className="text-white">{fare.date}</span>
+        </div>
+      </div>
+
+      <WhatsAppLink
+        message={createBookingMessage(fare)}
+        className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center"
+      >
+        <Icon name="WhatsApp" className="w-5 h-5 mr-2" />
+        <span>Book via WhatsApp</span>
+      </WhatsAppLink>
+    </motion.div>
+  );
+
   return (
     <div className="min-h-screen bg-background pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +171,7 @@ const AirTicketing: React.FC = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Search by city or airline..."
+                placeholder="Search by destination or airline..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full bg-gray-800/50 border border-gray-700 text-white rounded-lg px-4 py-3 pl-12 focus:outline-none focus:border-secondary"
@@ -129,7 +183,7 @@ const AirTicketing: React.FC = () => {
           </div>
         </div>
 
-        {/* Loading and Error Messages */}
+        {/* Loading and Error States */}
         {loading && (
           <div className="text-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-secondary mx-auto"></div>
@@ -143,65 +197,50 @@ const AirTicketing: React.FC = () => {
           </div>
         )}
 
-        {/* Airfares Grid */}
+        {/* Fares Grid */}
         {!loading && !error && (
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {filteredFares.map((fare) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Flights from Skardu */}
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-6 text-center">
+                Flights from Skardu
+              </h2>
               <motion.div
-                key={fare['s.no']}
-                variants={itemVariants}
-                className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                className="space-y-6"
               >
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-white">{fare.airline}</h3>
-                      <p className="text-sm text-gray-400">Updated: {fare.fare_update_date}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-bold text-secondary">Rs. {fare.price}</p>
-                      {fare.discount !== 'N/A' && (
-                        <p className="text-sm text-green-500">Discount: {fare.discount}</p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">From:</span>
-                      <span className="text-white">{fare.from}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">To:</span>
-                      <span className="text-white">{fare.to}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Date:</span>
-                      <span className="text-white">{fare.date}</span>
-                    </div>
-                  </div>
-
-                  <WhatsAppLink
-                    message={createBookingMessage(fare)}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center"
-                  >
-                    <Icon name="WhatsApp" className="w-5 h-5 mr-2" />
-                    <span>Book via WhatsApp</span>
-                  </WhatsAppLink>
-                </div>
+                {fromSkarduFares.length > 0 ? (
+                  fromSkarduFares.map((fare) => (
+                    <FareCard key={fare['s.no']} fare={fare} />
+                  ))
+                ) : (
+                  <p className="text-center text-gray-400">No flights available from Skardu</p>
+                )}
               </motion.div>
-            ))}
-          </motion.div>
-        )}
+            </div>
 
-        {!loading && !error && filteredFares.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-400">No fares found matching your search.</p>
+            {/* Flights to Skardu */}
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-6 text-center">
+                Flights to Skardu
+              </h2>
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                className="space-y-6"
+              >
+                {toSkarduFares.length > 0 ? (
+                  toSkarduFares.map((fare) => (
+                    <FareCard key={fare['s.no']} fare={fare} />
+                  ))
+                ) : (
+                  <p className="text-center text-gray-400">No flights available to Skardu</p>
+                )}
+              </motion.div>
+            </div>
           </div>
         )}
 
