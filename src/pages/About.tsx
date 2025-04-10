@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion';
-import Icon from '../components/shared/Icons';
+import Icon, { IconName } from '../components/shared/Icons';
 
 interface Milestone {
   year: number;
   title: string;
   description: string;
+}
+
+interface TeamMember {
+  name: string;
+  designation: string;
 }
 
 const About = () => {
@@ -29,6 +34,37 @@ const About = () => {
       title: "Regional Leadership",
       description: "Became one of the leading travel agencies in Northern Pakistan."
     }
+  ];
+
+  const teamMembers: TeamMember[] = [
+    { name: "Khadim Hussain", designation: "CEO" },
+    { name: "Muhammad Kazim", designation: "COO" },
+    { name: "Asghar Ali", designation: "Director Sales" },
+    { name: "Muhammad Yousuf", designation: "R&D Lead" },
+    { name: "Dr. Barkatullah", designation: "Strategy Officer" },
+    { name: "Muhammad Iqbal", designation: "Director HR" },
+    { name: "Imran Ali Asghar", designation: "CTO" },
+    { name: "Sajjad Hussain", designation: "BOD" },
+    { name: "Zaheer Abbas", designation: "VCR Manager" },
+    { name: "Ali Naqi", designation: "Marketing Manager" },
+    { name: "Syed Haider Abbas", designation: "Tourism Manager" },
+    { name: "Muhammad Ibrahim", designation: "Director Sales" },
+    { name: "Muhammad Nazir", designation: "Director Accounts" },
+    { name: "Mohsin Raza", designation: "Accounts Manager" },
+    { name: "Asghar Hussain", designation: "Supply Chain Manager" },
+    { name: "Tanveer Abbas", designation: "Chef" },
+    { name: "Muhammad Jawad", designation: "Sale Staff" },
+    { name: "Javed Iqbal", designation: "Digital Marketing Manager" },
+    { name: "Ghulam Muhammad", designation: "Iran Representative" },
+    { name: "Muzammil Hussain", designation: "Office Boy" },
+    { name: "Syed Taqi Mosvi", designation: "Sale Staff" },
+    { name: "Sherjeel Ehtisham", designation: "Sale Staff" },
+    { name: "Anwar Ali Najafi", designation: "Member BOD" },
+    { name: "Ameen", designation: "KSA Representative" },
+    { name: "Hussain Athar", designation: "UAE Representative" },
+    { name: "Muhammad Jawad Haider", designation: "Dubai Representative" },
+    { name: "Syed Mubarak Ali", designation: "Iraq Representative" },
+    { name: "Saqlain Shah", designation: "DDP Manager" }
   ];
 
   return (
@@ -75,6 +111,38 @@ const About = () => {
           </motion.div>
         </div>
 
+        {/* Team Members Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Our Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-gray-800/50 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300"
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                      <Icon name="User" className="w-6 h-6 text-secondary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">{member.name}</h3>
+                    <p className="text-gray-400">{member.designation}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Company Values */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-white text-center mb-12">Our Values</h2>
@@ -83,17 +151,17 @@ const About = () => {
               {
                 title: "Excellence",
                 description: "We strive for excellence in every service we provide",
-                icon: "Star"
+                icon: "Star" as IconName
               },
               {
                 title: "Integrity",
                 description: "We conduct our business with honesty and transparency",
-                icon: "Shield"
+                icon: "Shield" as IconName
               },
               {
                 title: "Innovation",
                 description: "We continuously improve and adapt to changing needs",
-                icon: "Lightbulb"
+                icon: "Lightbulb" as IconName
               }
             ].map((value, index) => (
               <motion.div
@@ -104,7 +172,7 @@ const About = () => {
                 className="bg-gray-800/50 rounded-xl p-6"
               >
                 <div className="bg-secondary/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                  <Icon name="Star" className="w-6 h-6 text-secondary" />
+                  <Icon name={value.icon} className="w-6 h-6 text-secondary" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
                 <p className="text-gray-300">{value.description}</p>
